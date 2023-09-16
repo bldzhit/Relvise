@@ -508,7 +508,6 @@ body {
 
 .services__column :hover {
    transition: all 0.5s;
-   background-color: #0D5C63;
    color: #fff;
 }
 
@@ -527,6 +526,9 @@ body {
    padding: 35px 40px;
 }
 
+.services__item:hover {
+   background-color: #0D5C63;
+}
 
 @media (max-width: 479px) {
    .services__item {
