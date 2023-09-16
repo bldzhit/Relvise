@@ -132,12 +132,17 @@ body {
 
 /* ------------------------------------------- */
 .header {
-   position: fixed;
+   position: absolute;
    width: 100%;
    left: 0;
    top: 0;
    z-index: 50;
-   background-color: rgb(37, 43, 66, 0.4);
+}
+@media (max-width: 767.98px) {
+   .header {
+      position: fixed;
+      background-color: rgb(37, 43, 66, 0.4);
+   }
 }
 
 .header__container {
