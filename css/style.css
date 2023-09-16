@@ -1072,15 +1072,18 @@ body {
 }
 
 .getintouch__items {
-   margin: 80px auto 0;
-   display: flex;
    align-items: center;
    justify-content: center;
-   min-height: 393px;
    flex-wrap: wrap;
-   row-gap: 10px;
-   padding: 0;
    list-style-type: none;
+}
+
+
+
+@media (max-width: 767.98px) {
+   .getintouch__items :not(:last-child) {
+      margin-bottom: 10px;
+   }
 }
 
 .getintouch__item {
@@ -1102,11 +1105,11 @@ body {
 
 .item-getintouch:hover {
    transition: all 0.5s;
-   background-color: #252B42;
    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+   background-color: #252B42;
    color: #fff;
-   min-height: 393px;
 }
+
 
 .item-getintouch:hover>.item-getintouch__button {
    transition: all 0.5s;
@@ -1176,13 +1179,15 @@ body {
    color: #fff;
 }
 
-
-
-@media (min-width: 992px) {
+@media (min-width: 767.98px) {
    .getintouch__items {
-      margin: 0px;
+      min-height: 393px;
       display: flex;
       align-items: center;
+   }
+
+   .item-getintouch:hover {
+      min-height: 393px;
    }
 }
 
@@ -1195,12 +1200,9 @@ body {
       margin: 0px 0px 50px 0px;
    }
 
-   .item-getintouch_active {
-      padding: 50px 15px;
-   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
    .getintouch__header {
       margin: 0px 0px 30px 0px;
    }
